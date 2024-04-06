@@ -1,0 +1,326 @@
+*{
+    color: rgb(0, 2, 3);
+    margin:0px;
+    text-align: center;
+}
+.full{
+    padding: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 197, 197);
+    padding-top: 0px;
+    margin-top: 0px;
+}
+/* .container{
+    padding: 2rem;
+    width: 20rem;
+    height: 30rem;
+    background-color: rgb(42, 61, 95);
+
+} */
+form{
+    margin: 2rem,0,2rem,0;
+    font-size: .75rem;
+}
+form button,input{
+  width: 100%;
+}
+form input{
+    border: 1px solid rgb(0, 2, 3);;
+}
+/* form select{
+    border: 1px solid rgb(0,2,3);
+} */
+/* form button{
+    border: 1px solid rgb(0, 2, 3);
+    width: 30%;
+} */
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+/* External Style.css for  container */
+.container {
+    width: 70vh;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f7fafc;
+    padding: 50px;
+    height: 25rem;
+  }
+  
+  .container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .lg:w-2/5 {
+    width: 40%;
+  }
+  
+  .md:w-1/2 {
+    width: 50%;
+  }
+  
+  .md:pr-10 {
+    padding-right: 2.5rem;
+  }
+  
+  .md:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .pb-12 {
+    padding-bottom: 3rem;
+  }
+  
+
+  
+ /* External Style.css  for Dropdowns*/
+form select {
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #f1f5f8; 
+    color: #333; 
+    cursor: pointer;
+  }
+  
+
+  form select:hover,
+  form select:focus {
+    background-color: #e0e6eb; 
+  }
+  
+  form select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333; 
+    pointer-events: none;
+  }
+  
+  form select + ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    max-height: 200px; 
+    overflow-y: auto;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    display: none;
+    z-index: 1000;
+  }
+  
+  form select:hover + ul,
+  form select:focus + ul {
+    display: block;
+  }
+  
+
+  form select + ul li {
+    padding: 8px 12px;
+    font-size: 16px;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form select + ul li:hover {
+    background-color: #e0e6eb; 
+  }
+  
+ /* Apply styling for form button */
+form button {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 30%; /* Set height to 30% of the container height */
+    width: 30%;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 8px; /* Adjust padding as needed */
+    padding-right: 8px; /* Adjust padding as needed */
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* Styling for Button*/
+  form button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  form button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  form button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  
+
+  /* styling for messagebox */
+
+#msg {
+    border: 1px solid #000005; 
+    border-radius:1px;
+    color: #36395A; 
+    font-family: "JetBrains Mono", monospace;
+    width: 100%; 
+    height:4rem;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    background-color: #3f76ee;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 0px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.toggle-label {
+    margin-right: 10px;
+}
+
+.toggle-input {
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Added some styling for the switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+#darkModeToggle:checked + .slider {
+    background-color: #2196F3;
+}
+
+#darkModeToggle:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+#darkModeToggle:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.from{
+    padding: 5px;
+    margin: 5px;
+    font-size: 10px;
+}
+.to{
+    padding: 5px;
+    margin: 5px;
+    font-size: 10px;
+}
+.Full{
+    width: 100%;
+}
+  
+  
+  

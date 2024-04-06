@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="codes.js"></script>
+</head>
+<body>
+    <div class="Full">
+   <!-- nav bar -->
+        <nav id="navbar">
+            <h1>CURRENCY CONVERTER</h1>
+            <div class="toggle-switch">
+                <span class="toggle-label">Dark Mode</span>
+                <label class="switch">
+                    <input type="checkbox" class="toggle-input" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </nav>
+
+
+    <div class="container">
+        <form>
+            <div class="amount">
+                <p>Enter Amount:</p>
+                <input value="00000" type="text">
+            </div>
+
+            <div class="dropdown">
+                <div class="from">
+                    <p>FROM</p>
+                    <div class="select-container">
+                        <select name="FROM" id="FROM">
+                            
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="to"> 
+                    <p>TO</p>
+                    <div class="select-container">  
+                        <select name="TO" id="TO">
+                            
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button id="btn">Convert</button>
+            <div id="msg">Converted</div>
+        </form>
+    </div>
+    </div>
+
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
